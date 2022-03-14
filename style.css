@@ -39,36 +39,33 @@ body {
 .clock .number.number-1 {
     --rotation: 30deg;
 }
-.clock .number.number-1 {
-    --rotation: 30deg;
+.clock .number.number-2 {
+    --rotation: 60deg;
 }
-.clock .number.number-1 {
-    --rotation: 30deg;
+.clock .number.number-3 {
+    --rotation: 90deg;
 }
-.clock .number.number-1 {
-    --rotation: 30deg;
+.clock .number.number-4 {
+    --rotation: 120deg;
 }
-.clock .number.number-1 {
-    --rotation: 30deg;
+.clock .number.number-5 {
+    --rotation: 150deg;
 }
-.clock .number.number-1 {
-    --rotation: 30deg;
+.clock .number.number-6 {
+    --rotation: 180deg;
 }
-.clock .number.number-1 {
-    --rotation: 30deg;
+.clock .number.number-7 {
+    --rotation: 210deg;
 }
-.clock .number.number-1 {
-    --rotation: 30deg;
+.clock .number.number-8 {
+    --rotation: 240deg;
 }
-.clock .number.number-1 {
-    --rotation: 30deg;
+.clock .number.number-9 {
+    --rotation: 270deg;
 }
-.clock .number.number-1 {
-    --rotation: 30deg;
+.clock .number.number-10 {
+    --rotation: 300deg;
 }
-.clock .number.number-1 {
-    --rotation: 30deg;
-}
-.clock .number.number-1 {
-    --rotation: 30deg;
+.clock .number.number-11 {
+    --rotation: 330deg;
 }
