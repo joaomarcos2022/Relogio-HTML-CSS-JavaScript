@@ -82,5 +82,7 @@ body {
     background-color: black;
     z-index: 10;
     transform: translatex(-50%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
