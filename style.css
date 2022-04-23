@@ -69,3 +69,10 @@ body {
 .clock .number.number-11 {
     --rotation: 330deg;
 }
+
+/* Ponteiros */
+.clock .hand {
+    --rotation: 0;
+
+    position: absolute;
+}
