@@ -86,3 +86,10 @@ body {
     border-top-right-radius: 10px;
 }
 
+.clock .hand.second {
+    width: 3px;
+    height: 40%;
+    background-color: red;
+}
+
+
