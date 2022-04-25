@@ -99,7 +99,9 @@ body {
 }
 
 .clock .hand.hour {
-    
+    width: 10px;
+    height: 25%;
+    background-color: black;
 }
 
 
