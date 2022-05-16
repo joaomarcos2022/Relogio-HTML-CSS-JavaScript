@@ -2,76 +2,80 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
     background-image: linear-gradient(
-        43deg,
-        #4158d0 0%,
-        #c450c0 46%,
-        #ffcc70 100%
+      43deg,
+      #d32acb96 0%,
+      #320a31 46%,
+      #320a31 100%
     );
     height: 100vh;
-}
-
-.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .clock {
     width: 500px;
     height: 500px;
-    background-color: rgba(255, 255, 255, 0,8);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
     border: 2px solid black;
-    position:relative;
-}
-
-.clock .number {
+    position: relative;
+  }
+  
+  .clock .number {
     --rotation: 0;
-
+  
     position: absolute;
     width: 100%;
     height: 100%;
     text-align: center;
     transform: rotate(var(--rotation));
-    font-size: 1,8rem;
+    font-size: 1.8rem;
     font-weight: 500;
-}
-
-.clock .number.number-1 {
+    padding: 15px;
+  }
+  
+  .clock .number.number-1 {
     --rotation: 30deg;
-}
-.clock .number.number-2 {
+  }
+  .clock .number.number-2 {
     --rotation: 60deg;
-}
-.clock .number.number-3 {
+  }
+  .clock .number.number-3 {
     --rotation: 90deg;
-}
-.clock .number.number-4 {
+  }
+  .clock .number.number-4 {
     --rotation: 120deg;
-}
-.clock .number.number-5 {
+  }
+  .clock .number.number-5 {
     --rotation: 150deg;
-}
-.clock .number.number-6 {
+  }
+  .clock .number.number-6 {
     --rotation: 180deg;
-}
-.clock .number.number-7 {
+  }
+  .clock .number.number-7 {
     --rotation: 210deg;
-}
-.clock .number.number-8 {
+  }
+  .clock .number.number-8 {
     --rotation: 240deg;
-}
-.clock .number.number-9 {
+  }
+  .clock .number.number-9 {
     --rotation: 270deg;
-}
-.clock .number.number-10 {
+  }
+  .clock .number.number-10 {
     --rotation: 300deg;
-}
-.clock .number.number-11 {
+  }
+  .clock .number.number-11 {
     --rotation: 330deg;
-}
-
-/* Ponteiros */
-.clock::after {
+  }
+  
+  /* Ponteiros */
+  .clock::after {
     content: "";
     position: absolute;
     width: 10px;
@@ -82,39 +86,37 @@ body {
     z-index: 11;
     background-color: black;
     transform: translate(-50%, -50%);
-}
-
-.clock .hand {
+  }
+  
+  .clock .hand {
     --rotation: 0;
-
+  
     position: absolute;
     bottom: 50%;
     left: 50%;
-    width: 10px;
-    height: 40%;
     background-color: black;
     z-index: 10;
-    transform: translatex(-50%);
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+    transform-origin: bottom;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
-
-.clock .hand.seconds {
+  }
+  
+  .clock .hand.seconds {
     width: 3px;
     height: 40%;
     background-color: red;
-}
-
-.clock .hand.minutes {
+  }
+  
+  .clock .hand.minutes {
     width: 7px;
     height: 35%;
     background-color: black;
-}
-
-.clock .hand.hour {
+  }
+  
+  .clock .hand.hours {
     width: 10px;
     height: 25%;
     background-color: black;
-}
-
-
+  }
+  
